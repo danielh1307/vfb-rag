@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    build: .
+    container_name: vfb_postgres
+    environment:
+      POSTGRES_DB: vfb_db
+      POSTGRES_USER: vfb_user
+      POSTGRES_PASSWORD: vfb_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      bash -c "
+        echo \"CREATE EXTENSION IF NOT EXISTS vector;\" > /docker-entrypoint-initdb.d/init.sql &&
+        docker-entrypoint.sh postgres
+      "
+
+volumes:
+  postgres_data: 
