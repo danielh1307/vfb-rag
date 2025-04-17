@@ -6,3 +6,8 @@ lxml
 langchain
 langchain-community
 langchain-openai
+sqlalchemy
+alembic
+psycopg2-binary
+pgvector
+python-dotenv
