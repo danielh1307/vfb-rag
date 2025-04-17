@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get database URL from environment variable or use default
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:postgres@localhost:5432/vfb_rag")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://vfb_user:vfb_password@localhost:5432/vfb_db")
 
 # Create SQLAlchemy engine
 engine = create_engine(DATABASE_URL)
