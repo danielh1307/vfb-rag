@@ -1,5 +1,6 @@
 # Project specific
 blog_articles/
+blog_articles_langchain/
 blog_articles_embeddings/
 player_profiles/
 openai_api_key.txt
