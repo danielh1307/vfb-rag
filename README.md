@@ -1,5 +1,7 @@
 # VfB Stuttgart Blog Crawler
 
+Sample RAG application, see also: https://python.langchain.com/docs/tutorials/rag/
+
 This project contains tools to crawl content from the VfB Stuttgart website.
 
 ## Features
